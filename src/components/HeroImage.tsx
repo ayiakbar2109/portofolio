@@ -46,7 +46,7 @@ export default function HeroImage() {
             <span className="text-secondary">Hello World!</span> selamat datang.
           </motion.p>
           <motion.h1
-            className="text-primary font-extrabold text-3xl lg:text-[2.65rem]"
+            className="text-primary font-extrabold text-3xl lg:text-[2.15rem] xl:text-[2.65rem]"
             variants={textVariant(1.3)}
           >
             I am a <span ref={el}></span>

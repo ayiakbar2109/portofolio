@@ -27,9 +27,9 @@ export default function ContactComp() {
   };
 
   return (
-    <section className="mt-12">
+    <section>
       <motion.div
-        className="flex flex-col"
+        className="flex flex-col mt-12"
         variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"

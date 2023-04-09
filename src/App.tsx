@@ -7,7 +7,7 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <>
-      <main className="px-[1.8rem] mt-16 lg:px-[6rem]">
+      <main className="px-[1.4rem] mt-16 lg:px-[6rem]">
         <Hero />
         <About />
         <Projects />
