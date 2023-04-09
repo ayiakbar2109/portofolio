@@ -17,7 +17,10 @@ export default function Projects() {
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
       >
-        <motion.p className="text-center" variants={textVariant(0.5)}>
+        <motion.p
+          className="text-sm lg:text-lg text-primary font-light text-center"
+          variants={textVariant(0.5)}
+        >
           | Projects
         </motion.p>
         <div className="flex flex-col gap-14 lg:grid lg:grid-cols-2 lg:gap-16 mt-16">

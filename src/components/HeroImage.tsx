@@ -64,11 +64,7 @@ export default function HeroImage() {
           className="flex items-center justify-end lg:h-[90%]"
           variants={fadeIn("down", "tween", 0.5, 0.8)}
         >
-          <img
-            src={HeroImg}
-            className="object-cover h-[95%]"
-            alt="hero image"
-          />
+          <img src={HeroImg} className="h-[70%] lg:h-[95%]" alt="hero image" />
         </motion.div>
       </motion.div>
     </section>

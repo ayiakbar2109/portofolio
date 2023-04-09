@@ -106,7 +106,7 @@ export default function AboutComp() {
         </div>
         <div className="flex mt-12 mx-auto">
           <motion.p
-            className="text-primary font-thin text-xl lg:text-2xl text-center leading-relaxed"
+            className="text-primary font-thin text-lg lg:text-2xl text-center leading-relaxed"
             variants={textVariant(1.6)}
           >
             <span className="italic">

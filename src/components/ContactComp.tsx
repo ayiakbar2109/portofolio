@@ -27,7 +27,7 @@ export default function ContactComp() {
   };
 
   return (
-    <section className="mt-20">
+    <section className="mt-12">
       <motion.div
         className="flex flex-col"
         variants={staggerContainer}
@@ -36,7 +36,7 @@ export default function ContactComp() {
         viewport={{ once: false, amount: 0.25 }}
       >
         <motion.p
-          className="text-center text-primary"
+          className="text-sm lg:text-lg text-primary font-light text-center"
           variants={textVariant(0.5)}
           id="contact"
         >
