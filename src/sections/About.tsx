@@ -16,7 +16,7 @@ export default function AboutComp() {
       <motion.div
         className="flex flex-col mt-12 lg:mt-28 w-auto"
         id="about"
-        variants={staggerContainer}
+        variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}

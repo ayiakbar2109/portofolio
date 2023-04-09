@@ -33,7 +33,7 @@ export default function HeroImage() {
     <section>
       <motion.div
         className="flex flex-col lg:grid lg:grid-cols-2 justify-center items-center"
-        variants={staggerContainer}
+        variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}

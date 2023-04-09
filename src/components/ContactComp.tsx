@@ -30,7 +30,7 @@ export default function ContactComp() {
     <section className="mt-12">
       <motion.div
         className="flex flex-col"
-        variants={staggerContainer}
+        variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
