@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"), url("./fonts/GothamMedium.ttf") format("truetype");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Rock";
+  src: local("Rock"), url("./fonts/ROCK.ttf") format("truetype");
+  font-weight: medium;
+}
+
+* {
+  font-family: "Gotham";
+}
+
+.logo-font {
+  font-family: "Rock";
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 6px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 0.5px solid rgba(255, 255, 255, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
