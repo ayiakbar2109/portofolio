@@ -69,7 +69,7 @@ export default function AboutComp() {
             >
               Library/Framework:
             </motion.p>
-            <div className="flex items-center gap-5 gap-y-7 mt-3.5">
+            <div className="flex flex-wrap items-center gap-5 gap-y-7 mt-3.5">
               <motion.img
                 src={ReactIcon}
                 className="w-14 lg:w-16"

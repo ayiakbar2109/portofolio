@@ -69,9 +69,7 @@ export default function Projects() {
               </h2>
               <p className="text-primary text-lg font-medium mt-3">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                voluptates labore laudantium ullam cumque, explicabo atque enim
-                eveniet temporibus praesentium a culpa! Ea.
+                voluptate asperiores, nulla
               </p>
             </article>
             <div className="flex mt-auto justify-end items-end gap-10">
@@ -104,8 +102,7 @@ export default function Projects() {
               <p className="text-primary text-lg font-medium mt-3">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
                 voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                voluptates labore laudantium ullam cumque, explicabo atque enim
-                eveniet temporibus praesentium a culpa! Ea.
+                voluptates labore laudantium ullam
               </p>
             </article>
             <div className="flex mt-auto justify-end items-end gap-10">
@@ -137,8 +134,7 @@ export default function Projects() {
               </h2>
               <p className="text-primary text-lg font-medium mt-3">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                voluptates labore laudantium ullam cumque, explicabo atque enim
+                voluptate asperiores, nulla magnam e, explicabo atque enim
                 eveniet temporibus praesentium a culpa! Ea.
               </p>
             </article>
