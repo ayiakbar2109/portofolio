@@ -1,19 +1,19 @@
 import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
+import TabSection from "./sections/Tabs";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import About from "./sections/About";
 
 function App() {
   return (
     <>
-      <main className="px-[1.4rem] mt-16 lg:px-[6rem]">
+      <main className="px-[1.4rem] lg:px-[6.8rem]">
         <Hero />
+        <TabSection />
         <About />
-        <Projects />
         <Contact />
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }
