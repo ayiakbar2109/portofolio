@@ -39,11 +39,11 @@ export default function TabSection() {
       viewport={{ once: false, amount: 0.25 }}
       id="project"
     >
-      <Tabs value="projects" className="mt-28">
+      <Tabs id="custom-animation" value="projects">
         <TabsHeader
-          className="bg-transparent flex lg:max-w-[45rem] text-primary"
+          className="bg-transparent md:max-w-sm mt-28"
           indicatorProps={{
-            className: "bg-gray-400/10  shadow-none text-primary rounded-md",
+            className: "bg-blue-500/10 shadow-none text-blue-500",
           }}
         >
           {data.map(({ label, value }) => (
@@ -52,7 +52,13 @@ export default function TabSection() {
             </Tab>
           ))}
         </TabsHeader>
-        <TabsBody>
+        <TabsBody
+          animate={{
+            initial: { y: 250 },
+            mount: { y: 0 },
+            unmount: { y: 250 },
+          }}
+        >
           {data.map(({ value, desc }) => (
             <TabPanel key={value} value={value}>
               {desc}
