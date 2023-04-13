@@ -41,7 +41,7 @@ export default function TabSection() {
     >
       <Tabs id="custom-animation" value="projects">
         <TabsHeader
-          className="bg-transparent md:max-w-sm mt-28"
+          className="bg-transparent md:max-w-sm mt-28 text-lg md:text-2xl"
           indicatorProps={{
             className: "bg-blue-500/10 shadow-none text-blue-500",
           }}
