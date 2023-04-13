@@ -17,11 +17,12 @@ export default function About() {
             variants={fadeIn("right", "spring", 1, 2)}
             src={Illustration}
             alt="Illustration image"
+            className="lg:h-full"
           />
         </div>
         <article className="flex flex-col gap-3">
           <motion.h2
-            className="text-primary font-bold text-4xl lg:text-6xl"
+            className="text-primary font-bold text-4xl md:text-6xl"
             variants={textVariant(0.7)}
           >
             About

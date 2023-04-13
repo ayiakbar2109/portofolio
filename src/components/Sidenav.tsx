@@ -1,9 +1,14 @@
 import React from "react";
-import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { TbBrandTelegram } from "react-icons/tb";
+import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { FaMailchimp } from "react-icons/fa";
 
 export default function Sidenav() {
   const sosmeds = [
+    {
+      name: "Mail",
+      icon: <FaMailchimp size={25} />,
+      link: "mailto:ayiakbarmaulana21@gmail.com",
+    },
     {
       name: "Github",
       icon: <FiGithub size={20} />,

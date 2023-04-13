@@ -1,8 +1,8 @@
 import React from "react";
-import NewsHomepageImg from "./../assets/project-news.png";
-import SnapLandingPage from "./../assets/snap-landing-page.png";
-import TipCalculator from "./../assets/tip-calculator.png";
-import EcommercePage from "./../assets/ecommerce-page.png";
+import NewsHomepageImg from "./../assets/project-news.webp";
+import SnapLandingPage from "./../assets/snap-landing-page.webp";
+import TipCalculator from "./../assets/tip-calculator.webp";
+import EcommercePage from "./../assets/ecommerce-page.webp";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
@@ -20,10 +20,11 @@ export default function Projects() {
       >
         <div className="flex flex-col mt-10 lg:gap-16 lg:mt-16">
           <Carousel
+            autoPlay={true}
             emulateTouch={true}
-            showArrows={false}
+            swipeable={false}
+            showArrows={true}
             showStatus={false}
-            stopOnHover={true}
             infiniteLoop={true}
             showThumbs={false}
             renderIndicator={(onClickHandler, isSelected, index, label) => {
@@ -53,16 +54,29 @@ export default function Projects() {
             }}
           >
             {/* Fake Store Projects */}
-            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-start items-start lg:px-3">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-center items-center lg:justify-start lg:items-start lg:px-3">
               <article>
                 <h2 className="text-primary text-left text-3xl lg:text-4xl font-bold">
                   Fake Store
                 </h2>
                 <p className="text-third text-left text-lg mt-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                  voluptates labore laudantium ullam cumque, explicabo atque
-                  enim eveniet temporibus praesentium a culpa! Ea.
+                  Di dalam project ini saya menggunakan library React dan API
+                  public milik{" "}
+                  <a
+                    href="https://fakestoreapi.com/"
+                    className="underline hover:text-secondary"
+                    target="_blank"
+                  >
+                    Fake Store API
+                  </a>
+                  . Lalu, memanggilnya dengan metode fetch memakai library
+                  axios. Setelah berhasil mendapatkan data dari API, saya
+                  menampilkan data tersebut ke dalam HTML dan styling memakai
+                  TailwindCSS.
+                  <br />
+                  <br />
+                  Di project ini juga saya memakai library Redux untuk
+                  mempermudah dalam management state.
                 </p>
                 <div className="flex mt-3 text-left gap-5 mb-12 lg:mb-0">
                   <a
@@ -87,16 +101,24 @@ export default function Projects() {
             </div>
 
             {/* Calculator App Projects */}
-            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-start items-start lg:px-3">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-center items-center lg:justify-start lg:items-start lg:px-3">
               <article>
                 <h2 className="text-primary text-left text-3xl lg:text-4xl font-bold">
                   Tip Calculator App
                 </h2>
                 <p className="text-third text-left text-lg mt-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                  voluptates labore laudantium ullam cumque, explicabo atque
-                  enim eveniet temporibus praesentium a culpa! Ea.
+                  Project kalkulator sederhana untuk menghitung persenan tip
+                  yang harus dikeluarkan ketika makan di rumah makan.
+                  <br />
+                  <br />
+                  Project ini merupakan salah satu tantangan dari website{" "}
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    className="underline hover:text-secondary"
+                  >
+                    Front End Mentor.
+                  </a>
                 </p>
                 <div className="flex mt-3 text-left gap-5 mb-12 lg:mb-0">
                   <a
@@ -121,16 +143,22 @@ export default function Projects() {
             </div>
 
             {/* Snap Landing Page */}
-            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-start items-start lg:px-3">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-center items-center lg:justify-start lg:items-start lg:px-3">
               <article>
                 <h2 className="text-primary text-left text-3xl lg:text-4xl font-bold">
                   Snap Landing Page
                 </h2>
                 <p className="text-third text-left text-lg mt-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                  voluptates labore laudantium ullam cumque, explicabo atque
-                  enim eveniet temporibus praesentium a culpa! Ea.
+                  Project ini hanya dibuat dengan HTML, dan CSS. <br />
+                  <br />
+                  Project ini merupakan salah satu tantangan dari website{" "}
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    className="underline hover:text-secondary"
+                  >
+                    Front End Mentor.
+                  </a>
                 </p>
                 <div className="flex mt-3 text-left gap-5 mb-12 lg:mb-0">
                   <a
@@ -155,16 +183,23 @@ export default function Projects() {
             </div>
 
             {/* News Homepage Projects */}
-            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-start items-start lg:px-3">
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-3 justify-center items-center lg:justify-start lg:items-start lg:px-3">
               <article>
                 <h2 className="text-primary text-left text-3xl lg:text-4xl font-bold">
                   News Homepage
                 </h2>
                 <p className="text-third text-left text-lg mt-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
-                  voluptate asperiores, nulla magnam vitae ipsum, excepturi
-                  voluptates labore laudantium ullam cumque, explicabo atque
-                  enim eveniet temporibus praesentium a culpa! Ea.
+                  Project ini dibuat dengana HTML, dan CSS. Di dalam project ini
+                  saya belajar banyak tentang grid. <br />
+                  <br />
+                  Project ini merupakan salah satu tantangan dari website{" "}
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    className="underline hover:text-secondary"
+                  >
+                    Front End Mentor
+                  </a>
                 </p>
                 <div className="flex mt-3 text-left gap-5 mb-12 lg:mb-0">
                   <a

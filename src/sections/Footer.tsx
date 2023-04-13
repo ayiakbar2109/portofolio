@@ -41,7 +41,7 @@ export default function Footer() {
       </div>
       <hr className="my-8 border-primary" />
       <Typography className="text-center font-normal text-primary">
-        &copy; 2023 Ayi Akbar Maulana
+        &copy; 2023 All Right Reserved
       </Typography>
     </motion.footer>
   );
