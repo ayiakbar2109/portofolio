@@ -16,7 +16,7 @@ export default function Projects() {
       <motion.div
         className="flex flex-col"
         id="projects"
-        variants={fadeIn("right", "spring", 0.5, 0.75)}
+        variants={fadeIn("right", "spring", 1, 1.5)}
       >
         <div className="flex flex-col mt-10 lg:gap-16 lg:mt-16">
           <Carousel
