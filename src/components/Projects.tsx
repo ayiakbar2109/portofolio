@@ -189,7 +189,7 @@ export default function Projects() {
                   News Homepage
                 </h2>
                 <p className="text-third text-left text-lg mt-3">
-                  Project ini dibuat dengana HTML, dan CSS. Di dalam project ini
+                  Project ini dibuat dengan HTML, dan CSS. Di dalam project ini
                   saya belajar banyak tentang grid. <br />
                   <br />
                   Project ini merupakan salah satu tantangan dari website{" "}
