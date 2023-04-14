@@ -19,7 +19,7 @@ export default function About() {
             About
           </motion.h2>
           <motion.p
-            className="text-third text-center md:text-lg 2xl:text-4xl max-w-4xl 2xl:max-w-[81rem] text-base"
+            className="text-third text-center md:text-lg 2xl:text-4xl max-w-2xl 2xl:max-w-[81rem] text-base"
             variants={textVariant(1.2)}
           >
             Hello, perkenalkan nama saya Ayi Akbar Maulana. Saya adalah seorang
