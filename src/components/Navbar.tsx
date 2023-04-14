@@ -60,10 +60,10 @@ export default function Navbar() {
             } `
       }`}
     >
-      <div className="flex h-24 items-center justify-between px-7 lg:px-14">
+      <div className="flex h-24 items-center justify-between px-7 lg:px-14 2xl:px-20">
         <a href="/" className="text-accent">
           <h1
-            className="text-2xl font-semibold"
+            className="text-2xl font-semibold 2xl:text-4xl"
             data-aos="fade-down"
             data-aos-once="true"
           >
@@ -87,7 +87,7 @@ export default function Navbar() {
           {navbarText.map((item, index) => (
             <a
               href={item.href}
-              className="flex flex-col items-end font-mono text-base  text-primary transition-all duration-300 hover:text-accent xl:text-base"
+              className="flex flex-col items-end font-mono text-base  text-primary transition-all duration-300 hover:text-accent xl:text-xl"
               key={index}
             >
               <p>{item.text}</p>

@@ -17,6 +17,10 @@ export default {
         base_col: "#EEEEEE",
         base_col_darker: "#151E31",
       },
+      screens: {
+        xl: "1150px",
+        "2xl": "1800px",
+      },
     },
   },
   plugins: [],

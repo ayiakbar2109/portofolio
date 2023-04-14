@@ -9,19 +9,19 @@ export default function ContactComp() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="mx-auto max-w-[48rem] mt-36 lg:mt-64 mb-36"
+      className="mt-36 lg:mt-64 mb-36"
       id="contact"
     >
-      <div className="text-center">
+      <div className="flex flex-col gap-3 justify-center items-center">
         <motion.h2
-          className="text-4xl font-bold tracking-tight text-primary sm:text-6xl"
+          className="text-primary text-center font-semibold text-4xl md:text-6xl 2xl:text-8xl"
           variants={textVariant(0.5)}
         >
           Get In Touch
         </motion.h2>
         <motion.p
           variants={textVariant(0.8)}
-          className="mt-6 text-lg leading-8 text-third"
+          className="text-third text-center md:text-lg 2xl:text-4xl max-w-4xl 2xl:max-w-[81rem] text-base"
         >
           Saat ini saya sedang mencari kesempatan bekerja untuk mendapatkan
           lebih banyak pengalaman di dalam industri. Apabila Anda memiliki
@@ -35,7 +35,7 @@ export default function ContactComp() {
           <a href="mailto:ayiakbarmaulana21@gmail.com">
             <Button
               variant="outlined"
-              className="flex items-center gap-2 py-1.5 px-3.5 text-base font-normal border-2 border-third text-third hover:bg-third/10 hover:-translate-y-1"
+              className="flex items-center gap-2 py-1.5 px-3.5 2xl:py-4 2xl:px-6 text-base 2xl:text-4xl font-normal border-2 border-third text-third hover:bg-third/10 hover:-translate-y-1"
             >
               Say hello
             </Button>

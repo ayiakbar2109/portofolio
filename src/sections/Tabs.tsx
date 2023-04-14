@@ -1,71 +1,80 @@
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
+import { useState } from "react";
+import { Tab } from "@headlessui/react";
 import TechnologyTab from "../components/TechnologyTab";
 import ToolsTab from "../components/ToolsTab";
 import Projects from "../components/Projects";
 import { motion } from "framer-motion";
-import { staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer } from "../utils/motion";
+
+function classNames(...classes: any) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function TabSection() {
-  const data = [
-    {
-      label: "Projects",
-      value: "projects",
-      desc: <Projects />,
-    },
-
-    {
-      label: "Tech",
-      value: "tech",
-      desc: <TechnologyTab />,
-    },
-    {
-      label: "Tools",
-      value: "tools",
-      desc: <ToolsTab />,
-    },
-  ];
+  let [categories] = useState({
+    Projects: [
+      {
+        content: <Projects />,
+      },
+    ],
+    Technology: [
+      {
+        content: <TechnologyTab />,
+      },
+    ],
+    Tools: [
+      {
+        content: <ToolsTab />,
+      },
+    ],
+  });
 
   return (
     <motion.div
-      variants={staggerContainer(1, 1)}
+      variants={fadeIn("right", "tween", 1, 1)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       id="project"
     >
-      <Tabs id="custom-animation" value="projects">
-        <TabsHeader
-          className="bg-transparent md:max-w-sm mt-28 text-lg md:text-2xl"
-          indicatorProps={{
-            className: "bg-blue-500/10 shadow-none text-blue-500",
-          }}
-        >
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody
-          animate={{
-            initial: { y: 250 },
-            mount: { y: 0 },
-            unmount: { y: 250 },
-          }}
-        >
-          {data.map(({ value, desc }) => (
-            <TabPanel key={value} value={value}>
-              {desc}
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
+      <div className="w-full px-2 py-16 sm:px-0 mt-16 lg:mt-28">
+        <Tab.Group>
+          <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+            {Object.keys(categories).map((category) => (
+              <Tab
+                id="projects"
+                key={category}
+                className={({ selected }) =>
+                  classNames(
+                    "w-full rounded-lg py-2.5 text-sm 2xl:text-2xl font-medium leading-5 text-blue-700",
+                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                    selected
+                      ? "bg-white shadow"
+                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                  )
+                }
+              >
+                {category}
+              </Tab>
+            ))}
+          </Tab.List>
+          <Tab.Panels className="mt-2">
+            {Object.values(categories).map((posts, idx) => (
+              <Tab.Panel
+                key={idx}
+                className={classNames(
+                  "rounded-xl bg-white p-3 shadow-xl",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                )}
+              >
+                {posts.map((content, index) => (
+                  <div key={index}>{content.content}</div>
+                ))}
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
+        </Tab.Group>
+      </div>
     </motion.div>
   );
 }
