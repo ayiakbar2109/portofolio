@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { BiX } from "react-icons/bi";
-import { FaHamburger } from "react-icons/fa";
+import { CgMenuHotdog } from "react-icons/cg";
+
 import { Button } from "@material-tailwind/react";
 import resume from "./../assets/resume.pdf";
 
@@ -75,7 +76,7 @@ export default function Navbar() {
         <div className="flex lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="relative z-30">
             {!isOpen ? (
-              <FaHamburger className="h-9 w-9 fill-current text-primary" />
+              <CgMenuHotdog className="h-9 w-9 fill-current text-primary" />
             ) : (
               <BiX className="h-10 w-10 fill-current text-primary" />
             )}
@@ -114,7 +115,7 @@ export default function Navbar() {
       >
         <div className="fixed top-0 z-0 h-full w-full backdrop-blur-sm"></div>
         <div className="fixed right-0 top-0 z-[99] h-full w-3/4 bg-[#EEEEEE] drop-shadow-lg md:w-1/2">
-          <div className="mt-44 flex flex-col items-center justify-center gap-12 text-base md:text-lg">
+          <div className="mt-44 flex flex-col items-center justify-start gap-12 text-base md:text-lg">
             {navbarText.map((item, index) => (
               <a
                 href={item.href}
@@ -125,6 +126,14 @@ export default function Navbar() {
                 <p className="flex flex-col">{item.text}</p>
               </a>
             ))}
+            <a href={resume} target="_blank">
+              <Button
+                variant="outlined"
+                className="flex items-center px-4 py-1  font-mono text-base  text-primary transition-all duration-300 xl:text-base 2xl:text-xl border-2 border-third hover:bg-third/10"
+              >
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
       </div>

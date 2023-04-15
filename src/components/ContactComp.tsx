@@ -21,7 +21,7 @@ export default function ContactComp() {
         </motion.h2>
         <motion.p
           variants={textVariant(0.8)}
-          className="text-third text-center md:text-lg 2xl:text-4xl max-w-xl 2xl:max-w-[81rem] text-base"
+          className="text-third text-center md:text-lg 2xl:text-3xl max-w-xl 2xl:max-w-[60rem] text-base"
         >
           Saat ini saya sedang mencari kesempatan bekerja untuk mendapatkan
           lebih banyak pengalaman di dalam industri. Apabila Anda memiliki
@@ -35,7 +35,7 @@ export default function ContactComp() {
           <a href="mailto:ayiakbarmaulana21@gmail.com">
             <Button
               variant="outlined"
-              className="flex items-center gap-2 py-1.5 px-3.5 2xl:py-4 2xl:px-6 text-lg 2xl:text-4xl font-normal border-2 border-third text-third hover:bg-third/10 hover:-translate-y-1"
+              className="flex items-center font-mono gap-2 py-1.5 px-3.5 2xl:py-4 2xl:px-6 text-lg 2xl:text-4xl font-normal border-2 border-third text-primary hover:bg-third/10 hover:-translate-y-1"
             >
               Say hello
             </Button>

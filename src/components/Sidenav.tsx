@@ -1,12 +1,10 @@
-import React from "react";
-import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
-import { FaMailchimp } from "react-icons/fa";
+import { FiGithub, FiInstagram, FiLinkedin, FiMail } from "react-icons/fi";
 
 export default function Sidenav() {
-  const sosmeds = [
+  const socialMedia = [
     {
       name: "Mail",
-      icon: <FaMailchimp size={25} />,
+      icon: <FiMail size={20} />,
       link: "mailto:ayiakbarmaulana21@gmail.com",
     },
     {
@@ -29,7 +27,7 @@ export default function Sidenav() {
     <div className="hidden lg:block">
       <div className="fixed bottom-0 right-0 w-[105px]">
         <div className="flex flex-col items-center" data-aos="fade-up">
-          {sosmeds.map((sosmed, index) => (
+          {socialMedia.map((sosmed, index) => (
             <div
               key={index}
               data-aos="fade-right"

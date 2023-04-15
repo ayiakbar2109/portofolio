@@ -18,7 +18,7 @@ export default function CardAbout(props: Props) {
 
   return (
     <div
-      className="flex cursor-pointer items-center gap-2 rounded border border-accent px-2 py-2 hover:bg-accent hover:bg-opacity-10 md:gap-3 lg:px-3"
+      className="flex cursor-pointer items-center gap-2 rounded bg-inherit px-2 py-2 hover:bg-accent hover:bg-opacity-10 md:gap-3 lg:px-3"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
