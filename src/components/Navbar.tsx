@@ -1,8 +1,8 @@
-"use client";
-// import a from "next/a";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BiX } from "react-icons/bi";
 import { FaHamburger } from "react-icons/fa";
+import { Button } from "@material-tailwind/react";
+import resume from "./../assets/resume.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +83,7 @@ export default function Navbar() {
         </div>
 
         {/* Navbar Text */}
-        <div className="text-base-content hidden  gap-10 lg:flex">
+        <div className="text-base-content hidden  gap-10 lg:flex lg:justify-center lg:items-center">
           {navbarText.map((item, index) => (
             <a
               href={item.href}
@@ -93,6 +93,14 @@ export default function Navbar() {
               <p>{item.text}</p>
             </a>
           ))}
+          <a href={resume} target="_blank">
+            <Button
+              variant="outlined"
+              className="flex items-center px-4 py-1  font-mono text-base  text-primary transition-all duration-300 xl:text-base 2xl:text-xl border-2 border-third hover:bg-third/10"
+            >
+              Resume
+            </Button>
+          </a>
         </div>
       </div>
 

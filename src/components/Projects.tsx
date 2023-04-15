@@ -83,8 +83,14 @@ export default function Projects() {
               return (
                 <div
                   key={index}
-                  className="flex flex-col-reverse xl:grid xl:grid-cols-2 gap-3 xl:gap-12 lg:px-4  xl:justify-start xl:items-start"
+                  className="flex flex-col xl:grid xl:grid-cols-2 gap-3 xl:gap-12 lg:px-4  xl:justify-start xl:items-start"
                 >
+                  <div className="flex flex-col justify-center items-center mb-6 lg:mb-12">
+                    <img
+                      src={project.image}
+                      className="px-3 md:px-20 xl:px-0"
+                    />
+                  </div>
                   <article className="md:px-6">
                     <h2 className="text-primary text-left text-2xl md:text-3xl lg:text-4xl font-bold 2xl:text-7xl">
                       {project.title}
@@ -92,7 +98,7 @@ export default function Projects() {
                     <p className="text-third text-left text-base md:text-lg mt-3 2xl:mt-6 2xl:text-3xl">
                       {project.desc}
                     </p>
-                    <div className="flex items-end justify-start ml-2 mt-4 2xl:mt-5 text-left gap-5 mb-12 xl:mb-0">
+                    <div className="flex items-end justify-start mt-4 2xl:mt-5 text-left gap-5 mb-12 xl:mb-0">
                       <a
                         href={project.repoLink}
                         target="_blank"
@@ -109,12 +115,6 @@ export default function Projects() {
                       </a>
                     </div>
                   </article>
-                  <div className="flex flex-col justify-center items-center mb-6 lg:mb-12">
-                    <img
-                      src={project.image}
-                      className="px-3 md:px-20 xl:px-0"
-                    />
-                  </div>
                 </div>
               );
             })}

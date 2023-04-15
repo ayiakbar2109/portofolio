@@ -14,7 +14,7 @@ export default function Footer() {
             <Typography
               as="a"
               href="#about"
-              className="font-normal transition-colors text-primary text-base xl:text-xl 2xl:text-2xl hover:text-secondary focus:text-secondary"
+              className="font-normal transition-colors text-primary text-base xl:text-lg 2xl:text-2xl hover:text-secondary focus:text-secondary"
             >
               About
             </Typography>
@@ -23,7 +23,7 @@ export default function Footer() {
             <Typography
               as="a"
               href="#project"
-              className="font-normal transition-colors text-primary text-base xl:text-xl 2xl:text-2xl hover:text-secondary focus:text-secondary"
+              className="font-normal transition-colors text-primary text-base xl:text-lg 2xl:text-2xl hover:text-secondary focus:text-secondary"
             >
               Projects
             </Typography>
@@ -32,7 +32,7 @@ export default function Footer() {
             <Typography
               as="a"
               href="#contact"
-              className="font-normal transition-colors text-primary text-base xl:text-xl 2xl:text-2xl hover:text-secondary focus:text-secondary"
+              className="font-normal transition-colors text-primary text-base xl:text-lg 2xl:text-2xl hover:text-secondary focus:text-secondary"
             >
               Contact
             </Typography>
@@ -40,8 +40,18 @@ export default function Footer() {
         </ul>
       </div>
       <hr className="my-8 border-primary" />
-      <Typography className="text-center font-normal text-primary text-base xl:text-xl 2xl:text-2xl">
+      <Typography className="text-center font-normal text-primary text-base xl:text-lg 2xl:text-2xl">
         &copy; 2023 All Right Reserved
+      </Typography>
+      <Typography className="text-center font-normal text-primary text-base xl:text-lg 2xl:text-2xl">
+        Design heavily inspired by{" "}
+        <a
+          href="https://brittanychiang.com/"
+          target="_blank"
+          className="transition-colors underline underline-offset-2 hover:text-secondary focus:text-secondary"
+        >
+          Brittany Chiang
+        </a>
       </Typography>
     </motion.footer>
   );

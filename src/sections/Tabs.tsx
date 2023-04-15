@@ -39,18 +39,18 @@ export default function TabSection() {
     >
       <div className="w-full px-2 py-16 sm:px-0 mt-16 lg:mt-28">
         <Tab.Group>
-          <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+          <Tab.List className="flex max-w-xl rounded-xl bg-secondary/10 p-1">
             {Object.keys(categories).map((category) => (
               <Tab
                 id="projects"
                 key={category}
                 className={({ selected }) =>
                   classNames(
-                    "w-full rounded-lg py-2.5 text-sm 2xl:text-2xl font-medium leading-5 text-blue-700",
+                    "w-full rounded-lg py-2.5 text-sm 2xl:text-2xl font-medium leading-5 text-primary",
                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
                     selected
                       ? "bg-white shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                      : "text-blue-100 hover:bg-gray-500/20 hover:text-primary"
                   )
                 }
               >

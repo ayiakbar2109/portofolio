@@ -1,25 +1,26 @@
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
+import { staggerContainer, textVariant } from "../utils/motion";
+import AboutImage from "./../assets/heroImage.webp";
 import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <section id="about">
       <motion.div
-        className=" mt-28 lg:mt-52"
+        className="flex flex-col-reverse xl:grid xl:grid-cols-2 xl:gap-8 justify-start items-start mt-28 lg:mt-52"
         variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <article className="flex flex-col gap-3 justify-center items-center">
+        <article className="flex flex-col gap-3 justify-start items-start">
           <motion.h2
-            className="text-primary text-center font-semibold text-4xl md:text-6xl 2xl:text-8xl"
+            className="text-primary text-left font-semibold text-4xl md:text-6xl 2xl:text-8xl"
             variants={textVariant(0.6)}
           >
             About
           </motion.h2>
           <motion.p
-            className="text-third text-center md:text-lg 2xl:text-4xl max-w-2xl 2xl:max-w-[81rem] text-base"
+            className="text-third text-left md:text-lg 2xl:text-4xl max-w-2xl 2xl:max-w-[81rem] text-base"
             variants={textVariant(0.8)}
           >
             Hello, perkenalkan nama saya Ayi Akbar Maulana. Saya adalah seorang
@@ -34,6 +35,9 @@ export default function About() {
             saya miliki, saya dapat mencapai segala tujuan yang saya impikan.
           </motion.p>
         </article>
+        <div>
+          <img src={AboutImage} alt="profile pic" />
+        </div>
       </motion.div>
     </section>
   );
