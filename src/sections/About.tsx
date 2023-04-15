@@ -9,18 +9,18 @@ export default function About() {
         variants={staggerContainer(1, 1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
       >
         <article className="flex flex-col gap-3 justify-center items-center">
           <motion.h2
             className="text-primary text-center font-semibold text-4xl md:text-6xl 2xl:text-8xl"
-            variants={textVariant(0.9)}
+            variants={textVariant(0.6)}
           >
             About
           </motion.h2>
           <motion.p
             className="text-third text-center md:text-lg 2xl:text-4xl max-w-2xl 2xl:max-w-[81rem] text-base"
-            variants={textVariant(1.2)}
+            variants={textVariant(0.8)}
           >
             Hello, perkenalkan nama saya Ayi Akbar Maulana. Saya adalah seorang
             Self-Taught Web Developer dan juga seorang suami. Perjalanan sebagai

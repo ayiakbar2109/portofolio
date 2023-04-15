@@ -31,10 +31,10 @@ export default function TabSection() {
 
   return (
     <motion.div
-      variants={fadeIn("right", "tween", 1, 1)}
+      variants={fadeIn("down", "tween", 0.5, 1)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       id="project"
     >
       <div className="w-full px-2 py-16 sm:px-0 mt-16 lg:mt-28">

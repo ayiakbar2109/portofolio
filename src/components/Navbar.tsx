@@ -87,7 +87,7 @@ export default function Navbar() {
           {navbarText.map((item, index) => (
             <a
               href={item.href}
-              className="flex flex-col items-end font-mono text-base  text-primary transition-all duration-300 hover:text-accent xl:text-xl"
+              className="flex flex-col items-end font-mono text-base  text-primary transition-all duration-300 hover:text-accent xl:text-base 2xl:text-xl"
               key={index}
             >
               <p>{item.text}</p>
