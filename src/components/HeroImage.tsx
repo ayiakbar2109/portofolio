@@ -17,7 +17,7 @@ export default function HeroImage() {
       >
         <div className="flex flex-col items-start justify-start gap-3 md:gap-4 lg:gap-3 xl:gap-5 2xl:gap-14">
           <motion.p
-            className="text-secondary font-medium text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl"
+            className="text-secondary font-medium text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mb-7"
             variants={textVariant(0.8)}
           >
             hello world!
@@ -29,7 +29,7 @@ export default function HeroImage() {
             I build <span className="text-secondary">web</span> with love.
           </motion.h1>
           <motion.p
-            className="text-third text-lg lg:text-base xl:text-3xl 2xl:text-4xl"
+            className="text-third/90 text-lg lg:text-base xl:text-2xl 2xl:text-4xl"
             variants={textVariant(1)}
           >
             I'm Ayi Akbar Maulana, a Front-End Web Developer based in Indonesia.

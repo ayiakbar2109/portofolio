@@ -110,12 +110,12 @@ export default function About() {
                       <Dialog.Panel className="w-full max-w-4xl 2xl:max-w-7xl transform overflow-hidden rounded-2xl bg-[#EEEEEE] p-6 text-left align-middle shadow-xl transition-all">
                         <Dialog.Title
                           as="h3"
-                          className="text-base 2xl:text-3xl font-medium  mb-4 leading-6 text-primary"
+                          className="text-base xl:text-lg 2xl:text-2xl font-medium  mb-4 leading-6 text-primary"
                         >
                           ...
                         </Dialog.Title>
                         <div className="mt-2">
-                          <p className="text-base 2xl:text-3xl text-primary">
+                          <p className="text-base xl:text-lg 2xl:text-2xl text-primary">
                             Saya merasa sangat berat hati dan kehilangan
                             semangat untuk mengejar karir sebagai seorang web
                             developer. Namun, setelah berjuang selama lima tahun
