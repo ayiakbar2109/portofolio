@@ -63,7 +63,7 @@ export default function TabSection() {
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  "rounded-xl bg-white/30 p-1 lg:px-12 shadow-xl",
+                  "rounded-xl bg-white/30 p-1 px-7 lg:px-12 shadow-xl",
                   "ring-white ring-opacity-60 ring-offset-2"
                 )}
               >

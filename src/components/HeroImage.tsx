@@ -15,21 +15,21 @@ export default function HeroImage() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <div className="flex flex-col items-start justify-start gap-5 md:gap-3 lg:gap-3 xl:gap-5 2xl:gap-14">
+        <div className="flex flex-col items-start justify-start gap-3 md:gap-4 lg:gap-3 xl:gap-5 2xl:gap-14">
           <motion.p
-            className="text-secondary font-medium text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl"
+            className="text-secondary font-medium text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl"
             variants={textVariant(0.8)}
           >
             hello world!
           </motion.p>
           <motion.h1
-            className="text-primary font-bold text-3xl md:text-4xl lg:text-[2.6rem] xl:text-[3.3rem] 2xl:text-[5.8rem] whitespace-nowrap"
+            className="text-primary font-bold text-[2rem] md:text-4xl lg:text-[2.6rem] xl:text-[3.3rem] 2xl:text-[5.8rem] whitespace-nowrap"
             variants={textVariant(0.9)}
           >
             I build <span className="text-secondary">web</span> with love.
           </motion.h1>
           <motion.p
-            className="text-third md:text-base lg:text-base xl:text-3xl 2xl:text-4xl"
+            className="text-third text-lg lg:text-base xl:text-3xl 2xl:text-4xl"
             variants={textVariant(1)}
           >
             I'm Ayi Akbar Maulana, a Front-End Web Developer based in Indonesia.
