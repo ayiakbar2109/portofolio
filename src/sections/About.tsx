@@ -164,7 +164,7 @@ export default function About() {
             </Transition>
           </motion.article>
         </article>
-        <motion.div variants={textVariant(1)}>
+        <motion.div variants={textVariant(0.6)}>
           <img src={AboutImage} className="inline-flex" alt="profile pic" />
         </motion.div>
       </motion.div>

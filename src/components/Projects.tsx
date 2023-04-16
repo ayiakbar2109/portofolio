@@ -59,7 +59,7 @@ export default function Projects() {
             return (
               <div
                 key={index}
-                className="flex flex-col-reverse lg:flex-col gap-3 lg:px-4  lg:justify-start lg:items-start border-b-2 last:border-b-0 border-third/50"
+                className="flex flex-col-reverse gap-3 lg:px-4  lg:justify-start lg:items-start border-b-2 last:border-b-0 border-third/50"
               >
                 <article className="lg:grid lg:grid-cols-2 lg:gap-3 justify-start items-start">
                   <div>

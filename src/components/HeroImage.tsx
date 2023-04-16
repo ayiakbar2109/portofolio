@@ -17,7 +17,7 @@ export default function HeroImage() {
       >
         <div className="flex flex-col items-start justify-start gap-3 md:gap-4 lg:gap-3 xl:gap-5 2xl:gap-14">
           <motion.p
-            className="text-secondary font-medium text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mb-7"
+            className="text-secondary font-medium text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl mb-10"
             variants={textVariant(0.8)}
           >
             hello world!
