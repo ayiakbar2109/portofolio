@@ -18,27 +18,23 @@ export default function HeroImage() {
         <div className="flex flex-col items-start justify-start gap-5 md:gap-3 lg:gap-3 xl:gap-5 2xl:gap-14">
           <motion.p
             className="text-secondary font-medium text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl"
-            variants={textVariant(0.4)}
+            variants={textVariant(0.8)}
           >
             hello world!
           </motion.p>
           <motion.h1
             className="text-primary font-bold text-3xl md:text-4xl lg:text-[2.6rem] xl:text-[3.3rem] 2xl:text-[5.8rem] whitespace-nowrap"
-            variants={textVariant(0.5)}
+            variants={textVariant(0.9)}
           >
             I build <span className="text-secondary">web</span> with love.
           </motion.h1>
-          {/* <motion.h1
-            className="text-third font-bold text-3xl  md:text-4xl lg:text-[2.6rem] xl:text-[3.3rem] 2xl:text-[5.8rem]  whitespace-nowrap -mt-3.5  lg:-mt-1.5 2xl:mt-0"
-            variants={textVariant(0.6)}
-          ></motion.h1> */}
           <motion.p
             className="text-third md:text-base lg:text-base xl:text-3xl 2xl:text-4xl"
-            variants={textVariant(0.7)}
+            variants={textVariant(1)}
           >
             I'm Ayi Akbar Maulana, a Front-End Web Developer based in Indonesia.
           </motion.p>
-          <motion.div variants={textVariant(0.8)} className="">
+          <motion.div variants={textVariant(1.1)} className="">
             <a href="#project">
               <Button
                 variant="outlined"
@@ -52,7 +48,7 @@ export default function HeroImage() {
         </div>
         <motion.div
           className="flex items-end justify-center w-full h-full"
-          variants={fadeIn("down", "spring", 0.8, 1.5)}
+          variants={textVariant(1.2)}
         >
           <img src={HeroImg} className="w-full h-full " alt="hero image" />
         </motion.div>

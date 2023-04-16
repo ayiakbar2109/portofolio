@@ -53,13 +53,13 @@ export default function Projects() {
   ];
   return (
     <section>
-      <motion.div className="flex flex-col" id="projects">
+      <div className="flex flex-col" id="projects">
         <div className="flex flex-col mt-10 lg:gap-16 lg:mt-16">
           {data.map((project, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col-reverse lg:flex-col gap-3 lg:px-4  lg:justify-start lg:items-start border-b-2 border-third/50"
+                className="flex flex-col-reverse lg:flex-col gap-3 lg:px-4  lg:justify-start lg:items-start border-b-2 last:border-b-0 border-third/50"
               >
                 <article className="lg:grid lg:grid-cols-2 lg:gap-3 justify-start items-start">
                   <div>
@@ -111,7 +111,7 @@ export default function Projects() {
             );
           })}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

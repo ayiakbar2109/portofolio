@@ -31,7 +31,7 @@ export default function TabSection() {
 
   return (
     <motion.div
-      variants={fadeIn("down", "tween", 0.5, 1)}
+      variants={staggerContainer(1, 1)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
@@ -47,7 +47,7 @@ export default function TabSection() {
                 className={({ selected }) =>
                   classNames(
                     "w-full rounded-lg py-2.5 text-sm 2xl:text-2xl font-medium leading-5 text-primary",
-                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                    "ring-white ring-opacity-60 ring-offset-2 focus:outline-none",
                     selected
                       ? "bg-white shadow"
                       : "text-blue-100 hover:bg-gray-500/20 hover:text-primary"
@@ -64,7 +64,7 @@ export default function TabSection() {
                 key={idx}
                 className={classNames(
                   "rounded-xl bg-white/30 p-1 lg:px-12 shadow-xl",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  "ring-white ring-opacity-60 ring-offset-2"
                 )}
               >
                 {posts.map((content, index) => (
