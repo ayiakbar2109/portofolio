@@ -58,12 +58,12 @@ export default function TabSection() {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2">
+          <Tab.Panels className="">
             {Object.values(categories).map((posts, idx) => (
               <Tab.Panel
                 key={idx}
                 className={classNames(
-                  "rounded-xl bg-white/30 p-3 shadow-xl",
+                  "rounded-xl bg-white/30 p-1 lg:px-12 shadow-xl",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
                 )}
               >
