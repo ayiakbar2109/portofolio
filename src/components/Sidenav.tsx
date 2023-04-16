@@ -1,6 +1,4 @@
 import { FiGithub, FiInstagram, FiLinkedin, FiMail } from "react-icons/fi";
-import { textVariant } from "../utils/motion";
-import { motion } from "framer-motion";
 
 export default function Sidenav() {
   const socialMedia = [
@@ -26,12 +24,7 @@ export default function Sidenav() {
     },
   ];
   return (
-    <motion.div
-      variants={textVariant(0.5)}
-      initial="hidden"
-      animate="show"
-      className="hidden lg:block"
-    >
+    <div className="hidden lg:block">
       <div className="fixed bottom-0 right-0 w-[105px]">
         <div className="flex flex-col items-center" data-aos="fade-up">
           {socialMedia.map((sosmed, index) => (
@@ -54,6 +47,6 @@ export default function Sidenav() {
           <div className="mt-4 h-20 w-[1px] bg-primary"></div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
